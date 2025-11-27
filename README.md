@@ -15,12 +15,8 @@ BaLang is an experimental programming language designed for beginners and young 
 ```Blng
 mama = mama1
 say mama
-loop 3 {
-say hi
-}
-if mama is mama1 {
-say yes
-}
+loop 3 {say hi}
+if mama is mama1 {say yes}
 stop
 ```
 
