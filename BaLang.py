@@ -16,7 +16,13 @@ def execute(command):
     try:
         if "=" in command:
             var, val = command.split("=")
-            variables[var.strip()] = val.strip()
+            try:
+                # Try as integer or float
+                val = eval(val)
+            except:
+                # Keep as string if eval fails
+                val = val
+            variables[var.strip()] = val
         elif command.startswith("say"):
             content = command[4:].strip()
             say(content)
