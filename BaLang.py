@@ -30,12 +30,23 @@ def execute(command):
             return "STOP"
         elif command.startswith("loop"):
             parts = command[4:].strip()
+
             if "{" in parts and "}" in parts:
-                num, inner = parts.split("{", 1)
-                inner = inner.rsplit("}", 1)[0]
-                for _ in range(int(num.strip())):
-                    for line in inner.strip().splitlines():
-                        execute(line)
+                inner = parts.split("{", 1)[1].rsplit("}", 1)[0].strip()
+                num_part = parts.split("{", 1)[0].strip()
+
+                if num_part:
+                    for _ in range(int(num_part)):
+                        for line in inner.splitlines():
+                            result = execute(line)
+                            if result == "STOP":
+                                return "STOP"
+                else:
+                    while True:
+                        for line in inner.splitlines():
+                            result = execute(line)
+                            if result == "STOP":
+                                return "STOP"
 
         elif command.startswith("if"):
             condition = command[2:].split("{")[0].strip()
