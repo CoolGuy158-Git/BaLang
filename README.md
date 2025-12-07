@@ -20,6 +20,24 @@ if mama is mama1 {say yes}
 stop
 ```
 
+## Interpreter
+To run BaLang scripts:
+
+1. Make sure your BaLang file is named with the .blng extension, e.g., hello.blng.
+
+2. Place your script in the same folder as interpreter.py or navigate to the BaLang folder in the terminal.
+
+3. Run the script with:
+
+```bash
+python interpreter.py <filename>.blng
+```
+
+Example:
+```bash
+python interpreter.py hello.blng
+```
+
 ## Notes
 
 - Syntax errors are ignored safely.  
