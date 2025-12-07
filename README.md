@@ -38,6 +38,22 @@ Example:
 python interpreter.py hello.blng
 ```
 
+**Optional**
+### Turn interpreter into a executable
+In your terminal run 
+```bash
+pip install pyinstaller
+```
+Build the executable
+```bash
+pyinstaller interpreter.py --onefile
+```
+Place the executable into any folder that is connected to paths via enviromental variables
+This lets you run commands like
+```bash
+interpreter <path to file>.blng
+```
+
 ## Notes
 
 - Syntax errors are ignored safely.  
