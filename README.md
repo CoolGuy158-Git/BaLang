@@ -5,7 +5,8 @@ BaLang is an experimental programming language designed for beginners and young 
 ## Overview
 
 - **Variables:** Store values using `=`  
-- **Output:** Display values with `say`  
+- **Output:** Display values with `say`
+- **Input:** Get user input using `ask`  
 - **Loops:** Repeat commands using `loop n { ... }`  
 - **Conditionals:** Simple `if var is value { ... }`  
 - **Stop Execution:** Use `stop` or `escape`  
