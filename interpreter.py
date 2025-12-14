@@ -1,6 +1,5 @@
 #####################################################################
-# BaLang Interpreter - Fixed Version
-# Fully supports say, ask, variables, loop, if, stop/escape
+# BaLang Interpreter
 # Copyright 2025 CoolGuy158-Git
 #####################################################################
 import sys
