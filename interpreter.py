@@ -1,5 +1,6 @@
 #####################################################################
-# BaLang Interpreter
+# BaLang Interpreter - Fixed Version
+# Fully supports say, ask, variables, loop, if, stop/escape
 # Copyright 2025 CoolGuy158-Git
 #####################################################################
 import sys
@@ -83,7 +84,7 @@ def execute(command):
         return
 
 if len(sys.argv) < 2:
-    print("Usage: python interpreter.py filename.blng")
+    print("BaLang interpreter please type yourfilename.blng to run it")
     sys.exit()
 
 script_file = sys.argv[1]
