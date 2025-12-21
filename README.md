@@ -65,8 +65,8 @@ Place the executable into any folder that is connected to paths via enviromental
 This lets you run commands like
 ```bash
 BaLang
->>>#Your Code
->>>run
+# Your Code
+run
 ```
 
 ## Notes
