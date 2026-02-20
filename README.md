@@ -54,21 +54,6 @@ This lets you run commands like
 ```bash
 interpreter <path to file>.blng
 ```
-
-## Turn BaLang.py into an executable
-Install pyinstaller
-build the executable
-```bash
-pyinstaller BaLang.py --onefile
-```
-Place the executable into any folder that is connected to paths via enviromental variables
-This lets you run commands like
-```bash
-BaLang
-# Your Code
-run
-```
-
 ## Notes
 
 - Syntax errors are ignored safely.  
